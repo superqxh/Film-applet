@@ -1,0 +1,8 @@
+<import src="../movies-stars/stars-template.wxml" />
+<template name="moviwTem">
+    <view class='movie-template-box' catchtap='W_moviesTap' data-moviesid="{{item.moviesId}}">
+        <image class='movie-img' src="{{item.images}}"></image>
+        <text class='movie-title'>{{item.title}}</text>
+        <template is="starsTem" data='{{item}}'></template>
+    </view>
+</template>

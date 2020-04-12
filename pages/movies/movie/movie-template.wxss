@@ -1,0 +1,18 @@
+.movie-template-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 22rpx;
+    width: 200rpx;
+}
+
+.movie-img {
+    width: 200rpx;
+    height: 270rpx;
+    padding-bottom: 15rpx;
+}
+
+.movie-title {
+    margin-bottom: 16rpx;
+    font-size: 13px;
+    text-align: center;
+}

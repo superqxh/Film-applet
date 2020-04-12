@@ -1,0 +1,16 @@
+
+@import "post-item/post-item-template.wxss";
+/* pages/posts/post.wxss */
+page {
+  background: rgb(242, 242, 242);
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  height: 480rpx;
+  padding-bottom: 0;
+}
+

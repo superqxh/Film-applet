@@ -1,0 +1,17 @@
+<template name="postItem">
+    <view class='post-box'>
+        <view class='post-author-date'>
+            <image src="{{postAuthor}}"></image>
+            <text>{{postAuthorDate}}</text>
+        </view>
+        <text class='post-title'>{{postTitle}}</text>
+        <image src="{{postContentImage}}" class='post-image'></image>
+        <text class='post-content'>{{postContent}}</text>
+        <view class='post-like'>
+            <image src="/img/icon/chat.png"></image>
+            <text>{{postLikeX}}</text>
+            <image src="/img/icon/view.png"></image>
+            <text>{{postLikeK}}</text>
+        </view>
+    </view>
+</template>

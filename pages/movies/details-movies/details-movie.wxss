@@ -1,0 +1,137 @@
+/* pages/movies/details-movies/details-movie.wxss */
+@import '../movies-stars/stars-template.wxss';
+
+.movieDetailsBox {
+  width: 100%;
+  height: 320rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.W-de-bg {
+  width: 100%;
+  height: 100%;
+  filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.W-de-title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin: 30rpx 0 0 20rpx;
+}
+
+.W-de-local {
+  font-size: 16px;
+  color: #fff;
+  font-weight: lighter;
+  margin: 20rpx 0 0 20rpx;
+}
+
+.W-de-count {
+  display: flex;
+  flex-direction: row;
+  margin: 50rpx 0 0 20rpx;
+  font-size: 13px;
+  color: rgb(223, 21, 68);
+}
+
+.W-de-count text {
+  color: #1f3463;
+}
+
+.W-de-img {
+  position: absolute;
+  right: 40rpx;
+  top: 150rpx;
+  height: 240rpx;
+  width: 160rpx;
+  z-index: 22;
+}
+
+.W-de-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.W-de-ping {
+  margin-left: 10rpx;
+}
+
+.W-Plot {
+  margin-top: 20rpx;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 30rpx 0 30rpx 20rpx;
+  color: #1f3463;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.W-p-til {
+  font-size: 13px;
+  color: #000;
+  font-weight: bold;
+}
+
+.W-t {
+  display: flex;
+  flex-direction: row;
+}
+
+.W-ju {
+  font-size: 13px;
+  color: #1f3463;
+  padding: 30rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.W-ju-content {
+  color: #333;
+  margin-top: 20rpx;
+  line-height: 15px;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.W-ying {
+  font-size: 13px;
+  color: #1f3463;
+}
+
+.W-ying {
+  width: 100%;
+  padding: 30px 20rpx;
+}
+
+.W-y-img {
+  margin-top: 20rpx;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.W-ming {
+  width: 170rpx;
+  height: 250rpx;
+  margin: 10rpx;
+  text-align: center;
+  display: inline-block;
+}
+.W-ming view {
+  line-height: 40rpx;
+  font-size: 14px;
+  color: #333;
+  word-break:break-all;
+}
+.W-y-img image {
+  width: 170rpx;
+  height: 210rpx;
+  white-space: nowrap;
+}

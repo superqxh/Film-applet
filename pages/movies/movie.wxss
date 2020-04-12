@@ -1,0 +1,48 @@
+/* pages/movies/movie.wxss */
+
+@import "movies-stars/stars-template.wxss";
+@import "movie/movie-template.wxss";
+@import "movie-list/movie-list-template.wxss";
+
+page {
+  background: rgb(242, 242, 242);
+}
+
+.W-search {
+    background: #f2f2f2;
+    height: 80rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.W-search icon {
+    margin: auto 0 auto 20rpx;
+}
+
+.W-search input {
+    height: 100%;
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    width: 600rpx;
+}
+
+.W-search-nr {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-left: 20rpx;
+}
+
+.W-search .W-clear {
+    margin: auto 0 auto 0rpx;
+}
+
+.W-SearchResult {
+  margin: 20px auto 20px 10rpx;
+  background: red;
+}
+
+.W-search-list {
+  float: left;
+  margin-bottom: 40rpx;
+}

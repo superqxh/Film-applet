@@ -1,0 +1,41 @@
+/* pages/index/index.wxss */
+page {
+  height: 100%;
+  background: #b3d4db;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avater {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border:1px solid #ccc;
+  margin-top: 160rpx;
+}
+
+.user-name {
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.moto-box {
+  margin-top: 200rpx;
+  width: 200rpx;
+  height: 80rpx;
+  border: 1px solid #405f80;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer
+}
+
+.moto {
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+}

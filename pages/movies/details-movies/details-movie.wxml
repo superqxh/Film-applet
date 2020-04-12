@@ -1,0 +1,73 @@
+<!--pages/movies/details-movies/details-movie.wxml-->
+<view class='W-de-img' catchtap='deImgTap' data-imgHttp="{{movies.images}}">
+  <image src='{{movies.images}}'></image>
+</view>
+<view class='movieDetailsBox'>
+  <image src='{{movies.images}}' class='W-de-bg' mode="aspectFill"></image>
+  <text class='W-de-title'>{{movies.title}}</text>
+  <view class='W-de-local'>
+    <text class='W-Country'>{{movies.countries+" · "+movies.year}}</text>
+  </view>
+
+  <view class='W-de-count'>
+    <view class='W-de-like'>
+      <text>{{movies.wishCount}}</text> 人喜欢</view>
+    <view class='W-de-ping'>
+      <text>{{movies.commentsCount}}</text> 条评论
+    </view>
+  </view>
+
+
+</view>
+
+<view class='W-Plot'>
+  <text class='W-p-til'>{{movies.originalTitle}}</text>
+  <view class='W-t' style='margin-top:10rpx;'>
+    <text class='W-p-p'>评分</text>
+
+    <view class='stars-box' style='margin-left:20rpx;'>
+      <view class='stars'>
+        <block wx:for="{{movies.star_Fen}}" wx:for-item="start_index">
+          <image wx:if="{{start_index==1}}" src="/img/icon/star.png"></image>
+          <image wx:elif="{{start_index==2}}" src="/img/icon/star_B.png"></image>
+          <image wx:else="{{start_index==0}}" src="/img/icon/none-star.png"></image>
+        </block>
+      </view>
+      <text class='stars-score'>{{movies.average}}</text>
+    </view>
+
+  </view>
+
+  <view style='margin-top:10rpx;'>
+    <text>导演</text>
+    <text style='margin-left:20rpx;'>{{movies.directors}}</text>
+  </view>
+
+  <view style='margin-top:10rpx;'>
+    <text>影人</text>
+    <text style='margin-left:20rpx;'>{{movies.casts}}</text>
+  </view>
+
+  <view style='margin-top:10rpx;'>
+    <text>类型</text>
+    <text style='margin-left:20rpx;'>{{movies.genres}}</text>
+  </view>
+
+</view>
+
+<view class='W-ju'>
+  <text>剧情简介</text>
+  <view class='W-ju-content'>{{movies.summary}}</view>
+</view>
+
+<view class='W-ying'>
+  <text>影人</text>
+  <scroll-view class='W-y-img' scroll-x style="width: 96%">
+    <block wx:for="{{movies.castsImg}}" wx:for-item="peopleImg">
+      <view class='W-ming'>
+        <image src='{{peopleImg}}' mode="aspectFill"></image>
+        <view>{{movies.name[index]}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,13 @@
+/* pages/movies/more-movies/more-movies.wxss */
+@import "../movie/movie-template.wxss";
+@import "../movies-stars/stars-template.wxss";
+
+.W-more-movies {
+  margin: 20px auto 20px 10rpx;
+  background: red;
+}
+
+.W-more-box {
+  float: left;
+  margin-bottom: 40rpx;
+}

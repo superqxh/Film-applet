@@ -1,0 +1,16 @@
+<template name="starsTem">
+    <view class='stars-box'>
+        <view class='stars'>
+            <block wx:for="{{item.star_Fen}}" wx:for-item="start_index">
+                <image wx:if="{{start_index==1}}" src="/img/icon/star.png"></image>
+                <image wx:elif="{{start_index==2}}" src="/img/icon/star_B.png"></image>
+                <image wx:else="{{start_index==0}}" src="/img/icon/none-star.png"></image>
+            </block>
+            <!-- <image src="/img/icon/star.png"></image>
+            <image src="/img/icon/star.png"></image>
+            <image src="/img/icon/star.png"></image>
+            <image src="/img/icon/star.png"></image> -->
+        </view>
+        <text class='stars-score'>{{item.average}}</text>
+    </view>
+</template>

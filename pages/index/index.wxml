@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='box'>
+  <image src='/img/0.jpg' class='user-avater'></image>
+  <text class='user-name'>Hello Rieko</text>
+  <view class='moto-box' bindtap="ontap"> 
+    <text class='moto'>开启小程序之旅</text>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/movies/movie.wxml-->
+<import src="./movie-list/movie-list-template.wxml" />
+<import src="./movie/movie-template.wxml" />
+<view class='W-search'>
+    <icon type="search" size="16" color='#1f4ba5' />
+    <input placeholder='输入您要查询的影片' placeholder-class='W-search-nr' class='W-search-box' bindblur='SearchBlur' bindinput="SearchInput" bindfocus='SearchFocus'></input>
+    <icon wx:if="{{clearShow}}" type="clear" size="23" class='W-clear' bindtap='clearTap' />
+</view>
+<view class='movie-box' wx:if="{{moviesBoxShow}}">
+    <template is="movieListTem" data="{{...Zh_movies}}" />
+    <template is="movieListTem" data="{{...soon_movies}}" />
+    <template is="movieListTem" data="{{...Top250_movies}}" />
+</view>
+
+<view class='W-search-content' wx:if='{{searchContentShow}}'>
+    <view class='W-SearchResult'>
+        <block wx:for="{{searchContent.movies}}" >
+            <view class='W-search-list'>
+                <template is="moviwTem" data="{{item}}" />
+            </view>
+        </block>
+    </view>
+
+</view>
